@@ -22,12 +22,18 @@ ul > li {
     list-style-type: none;
     padding-top: 20px;
 }
+ul {
+    display: flex;
+    flex-flow: nowrap row;
+}
+ul.right {
+    justify-content: flex-end;
+}
 a {
     text-decoration: none;
     color: aliceblue;
-    padding: 30px;
+    padding: 6px;
 }
-
 .menu {
     width: 50vw;
     height: 100px;
@@ -39,11 +45,11 @@ a {
 div.menu.right {
     transform: rotateY(180deg);
 }
-/* @media (max-width:420) {
-    body {
-        font-size: 10px;
+@media (min-width:768px) {
+    a {
+        padding: 35px;
     }
-} */
+}
 
 
 
